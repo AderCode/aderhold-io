@@ -1,0 +1,33 @@
+#navbar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: transparent;
+  position: absolute;
+
+  width: 100%;
+  margin: 1rem 0;
+  z-index: 2;
+
+  .nav-link {
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+
+    &:hover {
+      cursor: pointer;
+      .fa-chevron-down {
+        margin-top: 0.5rem;
+      }
+    }
+
+    & a {
+      color: inherit;
+    }
+
+    .fa-chevron-down {
+      transition: margin-top 0.2s ease-in-out;
+    }
+
+    
+  }
+}

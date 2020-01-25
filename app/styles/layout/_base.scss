@@ -1,0 +1,40 @@
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 0;
+}
+
+.italic {
+  font-family: "jetbrains_monoitalic";
+  font-style: italic;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  &-40 {
+    @extend .container;
+    width: 40%
+  }
+
+  &-50 {
+    @extend .container;
+    width: 50%
+  }
+
+  &-75 {
+    @extend .container;
+    width: 75%
+  }
+  &-100 {
+    @extend .container;
+    width: 100%
+  }
+}
