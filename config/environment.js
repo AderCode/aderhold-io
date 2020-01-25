@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'personal-site',
+    modulePrefix: 'aderhold-io',
     environment,
     rootURL: '/',
     locationType: 'auto',

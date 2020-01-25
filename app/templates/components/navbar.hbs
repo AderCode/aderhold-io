@@ -1,0 +1,10 @@
+<div id="navbar">
+  {{#each pages as |page|}}
+    <div class="nav-link no-select">
+      {{#link-to page.path}}
+        {{page.label}}<br>
+        {{fa-icon "chevron-down"}}
+      {{/link-to}}
+    </div>
+  {{/each}}
+</div>

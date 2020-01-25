@@ -1,0 +1,22 @@
+//* Vendor
+@import "bourbon";
+
+
+//* Config ( quick paste: 'config/' )
+@import
+'config/animations',
+'config/base',
+'config/variables';
+
+
+//* Layout ( quick paste: 'layout/' )
+@import
+'layout/base',
+'layout/index';
+
+
+//* Components ( quick paste: 'components/' )
+@import 
+  'components/avatar',
+  'components/card',
+  'components/navbar';
