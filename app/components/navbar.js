@@ -5,25 +5,25 @@ export default Component.extend({
   init() {
     this._super(...arguments);
     this.set('pages', [
-      // {
-      //   path: "index",
-      //   label: "Home",
-      // }, /* {
-      //   path: "about",
-      //   label: "About",
-      // }, */ {
-      //   path: "experience",
-      //   label: "Experience",
-      // }, /* {
-      //   path: "projects",
-      //   label: "Projects",
-      // }, */ /* {
-      //   path: "blogs",
-      //   label: "Blog",
-      // }, */ {
-      //   path: "contact",
-      //   label: "Contact",
-      // }
+      {
+        path: "index",
+        label: "Home",
+      }, /* {
+        path: "about",
+        label: "About",
+      }, */ {
+        path: "experience",
+        label: "Experience",
+      }, /* {
+        path: "projects",
+        label: "Projects",
+      }, */ /* {
+        path: "blogs",
+        label: "Blog",
+      }, */ /* {
+        path: "contact",
+        label: "Contact",
+      } */
     ]);
   }
 });
