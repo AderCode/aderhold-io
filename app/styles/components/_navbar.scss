@@ -12,6 +12,7 @@
     display: inline-flex;
     text-align: center;
     justify-content: center;
+    -webkit-text-stroke: 1px white;
 
     &:hover {
       cursor: pointer;

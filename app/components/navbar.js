@@ -8,10 +8,10 @@ export default Component.extend({
       {
         path: "index",
         label: "Home",
-      }, /* {
+      }, {
         path: "about",
         label: "About",
-      }, */ {
+      }, {
         path: "experience",
         label: "Experience",
       }, /* {
