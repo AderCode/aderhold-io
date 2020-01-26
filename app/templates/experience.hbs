@@ -1,1 +1,38 @@
-{{outlet}}
+<div class="container-full exp">
+  <h1 class="page-header">Experience</h1>
+  {{#each companies as |company|}}
+    <div class="experience card pop-in">
+      {{#if company.logo.url}}
+        <div class="company-logo top-left" style={{html-safe (concat "background-image: url(" company.logo.url ");")}}></div>
+      {{/if}}
+      <div class="company-info">
+        <div class="company-name">
+          {{company.name}}
+        </div>
+        <div class="company-duration">
+          {{company.duration}}
+        </div>
+        <div class="job-title italic">
+          {{company.jobTitle}}
+        </div>
+      </div>
+      <p class="company-description">
+        {{html-safe company.description}}
+      </p>
+      {{#if company.tags.length}}
+        <div class="bottom tags italic">
+          Tech Stack: 
+          {{#each company.tags as |tag|}}
+            <a class="tag" href="https://www.google.com/search?q={{tag}}" target="_blank" rel="noopener">#{{tag}}</a>
+          {{/each}}
+        </div>
+      {{/if}}
+      {{#if company.url}}
+        <div class="bottom-right">
+          {{!-- Link to experience --}}
+          <a href={{company.url}} target="_blank" rel="noopener" class="link">{{fa-icon "link"}}</a>
+        </div>
+      {{/if}}
+    </div>
+  {{/each}}
+</div>
