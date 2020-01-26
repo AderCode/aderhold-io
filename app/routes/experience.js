@@ -14,10 +14,10 @@ const blankCompany = {
   tags: []
 }
 
-const dotEdison = Object.assign({}, blankCompany);
+const dotEdison = {};
 dotEdison.name = "dotEdison";
 dotEdison.url = "https://dotedison.com";
-dotEdison.logo.url = "https://www.dotedison.com/wp-content/uploads/2017/12/de-512x512.png";
+dotEdison.logo = { url: "https://www.dotedison.com/wp-content/uploads/2017/12/de-512x512.png" };
 dotEdison.duration = "04.25.2018 => 03.15.2019";
 dotEdison.jobTitle = "Full Stack Developer";
 dotEdison.description = `Restaurant Management Software, ForkastRM, offered full inventory tracking, employee tracking, waste analysis, live PnL reporting and live predictive product projections based on inventory and integrations with over 14 POS, Time Management, and Accounting applications such as Square, Aloha, Toast, Aireus, Efficenter, and more.<br><br>Besides app and dual api development I was also responsible for live chat support/success of customers, ticketing management,team KPI/progress reporting, training/mentoring new employees, all while assisting the CTO and COO in product/team management.<br><br>Direct Reports: <a class="italic" href="https://www.linkedin.com/in/tim-busbee-97046b91/" target="_blank" rel="noopener"><u>Tim Busbee</u></a> && <a class="italic" href="https://www.linkedin.com/in/jason-hamer-b5b0b537/" target="_blank" rel="noopener"><u>Jason Hamer</u></a>`;
