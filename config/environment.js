@@ -23,7 +23,12 @@ module.exports = function(environment) {
     }
   };
 
+  if (environment === 'local') {
+    ENV.host = "http://localhost:4200";
+  }
+
   if (environment === 'development') {
+    ENV.host = "http://dev.aderhold.io";
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -44,7 +49,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    ENV.host = "http://www.aderhold.io";
   }
 
   return ENV;
