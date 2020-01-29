@@ -1,0 +1,15 @@
+$extra-small-screen: 640px; //* use max-width instead of min-width
+$small-screen: 768px;
+$medium-screen: 992px;
+$large-screen: 1200px;
+$extra-large-screen: 1441px;
+$extra-extra-large-screen: 1921px;
+
+
+//* Shorthand variables
+  $xs: $extra-small-screen; //* use max-width instead of min-width
+  $sm: $small-screen;
+  $md: $medium-screen;
+  $lg: $large-screen;
+  $xl: $extra-large-screen;
+  $xxl: $extra-extra-large-screen;
