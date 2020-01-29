@@ -34,10 +34,12 @@ caseStatus.tags = ["EmberJS", "Python", "PostgreSQL"]
 
 
 export default Route.extend({
-  setupController(controller, model) {
+  setupController(controller) {
     controller.set('companies', [
       dotEdison, 
       caseStatus,
     ].reverse());
+
+    controller.set('routeTitle', "Experience")
   }
 });
